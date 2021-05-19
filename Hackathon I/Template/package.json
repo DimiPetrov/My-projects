@@ -1,0 +1,17 @@
+{
+  "name": "hack2-solution",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "doc": "jsdoc utils/arrays.js utils/expressions.js utils/math.js utils/objects.js utils/strings.js"
+  },
+  "keywords": [],
+  "author": "Telerik Academy",
+  "license": "ISC",
+  "devDependencies": {
+    "jsdoc": "^3.6.3"
+  }
+}

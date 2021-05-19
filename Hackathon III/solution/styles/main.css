@@ -1,0 +1,274 @@
+/* Template styling */
+
+html, body {
+  margin: 0;
+}
+
+body {
+  background: url('../images/dark-linen.png') repeat;
+  font-family: 'Roboto', sans-serif;
+}
+
+div#app {
+  display: grid;
+  max-width: 1400px;
+  margin: 0 auto;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas: 
+    'header header header'
+    'menu menu menu'
+    'container container container'
+    'footer footer footer'
+  ;
+  min-height: 100vh;
+}
+
+header {
+  grid-area: header;
+  height: 200px;
+  background: url('../images/banner-top.png');
+}
+
+nav {
+  grid-area: menu;
+  height: 60px;
+  background: url('../images//banner-bottom.png');
+  font-size: 1.75em;
+  line-height: 60px;
+  padding: 20px;
+  color: white;
+  display: flex;
+}
+
+nav a {
+  color: rgb(95, 191, 255);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: rgb(198, 115, 247);
+}
+
+#container {
+  grid-area: container;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  color: white;
+}
+
+footer {
+  grid-area: footer;
+  padding: 10px;
+  text-align: center;
+  color: #ccc;
+}
+
+.hidden {
+  display: none;
+}
+
+a.active {
+  color: white;
+  font-weight: bold;
+}
+
+input#search {
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border: 1px solid gray;
+  border-radius: 4px;
+  height: 24px;
+  flex: 1 0;
+  margin: auto;
+}
+
+span.favorite {
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+span.favorite.active {
+  color: rgb(255, 0, 149);
+}
+
+span.favorite:hover {
+  color:rgb(187, 135, 255)
+}
+
+/* End template styling */
+
+
+
+/* Add your styles below */
+
+/**
+ * @author Dayana Kirilova
+ */
+ #categories .content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.movie-simple {
+  border: 1px solid rgb(187, 135, 255);
+  border-radius: 5px;;
+  padding: 15px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  width: 240px;
+}
+
+#movies .content {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.movie-simple {
+  opacity: 80%;
+}
+
+.movie-simple:hover {
+  opacity: 100%;
+}
+
+.movie-simple .title {
+  color: rgb(184, 134, 231);
+  font-size: 35px;
+}
+
+.movie-simple .release-year {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.movie-simple img {
+  max-width: 100%;
+}
+
+.view-details-button {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-details-button button {
+  color: blueviolet;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 1em;
+}
+
+.view-details-button button:hover {
+  color: lightpink;
+}
+
+/**
+* @author Mihail Enev
+*/
+#home .content{
+  text-align: center;
+  display: block;
+}
+
+#subTitle {
+  color: rgb(184, 184, 184);
+}
+
+#home .content p {
+  margin-right: 35px;
+  font-size: 19px;
+}
+
+#home .paragraphs {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 28%;
+  color: rgb(184, 184, 184);
+}
+
+
+/**
+* @author Tsvetelina Kyoseva
+*/
+#categories .content .category{
+  margin: 5px;
+  border: #332C37 solid 2px;
+  border-radius: 5px;
+  background-color:#0F0F11;
+  width: 250px;
+  padding: 15px; 
+  text-align: center;
+}
+
+
+#categories h1{
+  color:#BE88FF;
+  
+}
+
+.category a{
+  padding: 2px;
+  color:#BE88FF;
+}
+
+.category a:hover {
+  color: lightpink;
+}
+
+
+.category a:link { 
+  text-decoration: none; 
+}
+
+/**
+* @author Dimitar Petrov
+*/
+#about .content img {
+  float: right;
+}
+
+#about .content h1 {
+  color:rgb(187, 135, 255);
+}
+
+/**
+* @author Mark Yosifov
+*/
+
+.movie-content {
+  color:rgb(75, 75, 75);
+  display: flex;
+  color: #ccc;
+  border: 1px solid rgb(75, 75, 75);
+  background-color: black;
+  border-radius: 1px;
+}
+
+#container h1 {
+  color: rgb(187, 135, 255);
+}
+
+.movie-content .left-side {
+  margin: 1em;
+  font-size: 20px;
+  max-width: 100%;
+}
+
+.movie-content .left-side img {
+  max-width: 100%;
+}
+
+.movie-content .right-side {
+  margin: 2em;
+}
+hr.style1{
+  border: 1px solid rgb(75, 75, 75);;
+  border-radius: 1px;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "hack2-solution",
+  "version": "1.0.0",
+  "description": "hack2-the-wolves-of-telerik",
+  "main": "index.js",
+  "type": "module",
+  "prettier": {
+    "singleQuote": true
+  },
+  "scripts": {
+    "start": "node index.js",
+    "doc": "jsdoc 02.array-utils.js 03.partially-applied.js",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": "Telerik Academy",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.18.0",
+    "eslint-config-google": "^0.14.0",
+    "jsdoc": "^3.6.3"
+  }
+}

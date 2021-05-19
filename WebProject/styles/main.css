@@ -1,0 +1,274 @@
+html, body {
+  margin: 0;
+}
+  
+body {
+  background: url('../images/finalBackGround.jpg') repeat;
+  font-family: 'Roboto', sans-serif;
+}
+  
+div#app {
+  display: grid;
+  max-width: 1400px;
+  margin: 0 auto;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas: 
+    'header header header'
+    'menu menu menu'
+    'container container container'
+    'footer footer footer'
+  ;
+  min-height: 100vh;
+}
+  
+header {
+  text-align: center;
+  color:bisque;
+  text-decoration:lawngreen;
+  font-size: 25px;
+  font-weight: bolder;
+  background-position: center;
+  grid-area: header;
+  height:250px;
+  background: url('../images/cat.gif');
+}
+  
+nav a {
+  color: rgb(95, 191, 255);
+  text-decoration: none;
+  margin: 0 10px;
+}
+  
+nav a:hover {
+  color: rgb(198, 115, 247);
+}
+  
+#container {
+  grid-area: container;
+  padding: 20px;
+  color: white;
+}
+  
+footer {
+  grid-area: footer;
+  padding: 10px;
+  text-align: center;
+  color: #ccc;
+}
+  
+.hidden {
+  display: none;
+}
+  
+a.active {
+  color: white;
+  font-weight: bold;
+}
+
+/**
+* @author Mihail Enev
+*/
+
+input#search {
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border: 1px solid gray;
+  border-radius: 4px;
+  height: 24px;
+  flex: 1 0;
+  margin: auto;
+}
+  
+span.favorite {
+  padding-left: 10px;
+  cursor: pointer;
+}
+  
+span.favorite.active {
+  color: rgb(255, 0, 149);
+}
+  
+span.favorite:hover {
+  color:rgb(187, 135, 255)
+}
+
+#about .content img {
+  float: center;
+}
+
+#about .content h1 {
+  text-align: center;
+  color: rgb(147, 66, 252);
+}
+
+#about .content h2 {
+  text-align: center;
+  color: rgb(182, 134, 250);
+}
+
+#about .content h3 {
+  text-align: center;
+  color: rgb(220, 193, 248);
+}
+
+#about {
+  margin:auto;
+  width: 33%;
+
+}
+
+#home .content {
+  text-align: center;
+  display: block;
+}
+
+#home img {
+  margin: auto;
+  width: 100%;
+}
+#subTitle {
+  color: rgb(252, 62, 62);
+}
+
+#Title {
+  color: rgb(187, 135, 255);
+}
+
+ul li:nth-child(1) {
+  color: rgb(95, 250, 95);
+}
+
+ul li:nth-child(2) {
+  color: rgb(123, 95, 250);
+}
+
+ul li:nth-child(3) {
+  color: rgb(216, 250, 95);
+}
+
+ul li:nth-child(4) {
+  color: rgb(250, 95, 172);
+}
+
+#home .content p {
+  margin-right: 35px;
+  font-size: 19px;
+}
+
+#home .paragraphs {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 28%;
+  color: rgb(184, 184, 184);
+}
+
+#container #gifs h1 {
+  font-size: 30px;
+  text-align: center;
+  color:rgb(187, 119, 226)
+}
+
+#container #gifs .gif-simple .title {
+  font-size: 15px;
+  color:rgb(239, 247, 96);
+  text-align: center;
+}
+
+#container #gifs .gif-simple .release-year {
+  font-size: 14px;
+  color:rgb(94, 241, 131);
+  text-align: center;
+}
+
+#container #gifs .gif-simple {
+  width: 33%;
+  border: 10px solid rgb(97, 96, 96) #ccc;
+  padding: 20px;
+}
+
+#buttons {
+  margin: auto;
+  width: 50%;
+}
+
+.gif-simple {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+ .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+
+/**
+* @author Mark Yosifov
+*/
+
+.gif-content-details {
+  color:rgb(75, 75, 75);
+  display: flex;
+  color: #ccc;
+  border: 1px solid rgb(75, 75, 75);
+  background-color: black;
+  border-radius: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 58%;
+  
+}
+
+#container h4 {
+  color: rgb(150, 150, 150);
+  border: 1px solid rgb(75, 75, 75);
+  background-color: black;
+  border-radius: 1px;
+  max-width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.gif-content-details .left-side {
+  
+  margin: 1em;
+  font-size: 17px;
+  max-width: 50%;
+}
+
+.gif-content-details .left-side img {
+  max-width: 50%;
+}
+
+.gif-content-details .right-side {
+  margin: 1em;
+}
+.button {
+  background-color: rgb(75, 75, 75);
+  border-color: white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/**
+* @author Dimitar Petrov
+*/
+
+#container h5 {
+  text-align: center;
+  color: rgb(172, 117, 245);
+  font-size: 20px;
+}
